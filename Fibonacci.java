@@ -15,7 +15,7 @@ class fibo2 extends fibo1
     void fibonaci()
     {
         try{
-        File file = new File("C:\\Users\\Prabha\\Pictures\\Input.txt");
+        File file = new File("C:\\Users\\prade\\Pictures\\Input.txt");
          FileReader fin= new FileReader(file);
          while ((n=fin.read())!= -1){
              System.out.println("Fibonacci series upto "+n+" is :-");
