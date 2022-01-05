@@ -1,15 +1,21 @@
 import java.io.*;
-abstract class fibo1
+abstract class fibo
 {
     int n;
     int d;
     int a=0;
-         int b=1;
-          int c;
+    int b=1;
+    int c;
     abstract void fibonaci();
 }
-
-class fibo2 extends fibo1
+public class FibonacciExample1{
+    public static void main(String[] args) throws Exception
+ {
+     fibo1 obj = new fibo1();
+     obj.fibonaci();
+ }
+}
+class fibo1 extends fibo
 {
     
     void fibonaci()
@@ -33,12 +39,6 @@ class fibo2 extends fibo1
        
          
          
-        }catch(IOException e)
-        {}
-public class Main {
-    public static void main(String[] args) throws Exception
-    {
-        fibo2 obj = new fibo2();
-        obj.fibonaci();
-    }
+        }catch(IOException e){}
+}
 }
